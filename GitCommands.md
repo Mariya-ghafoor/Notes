@@ -40,4 +40,7 @@ git reset HEAD~
 
 #Remove the last two commits
 git reset HEAD~2
+
+#Remove the commit, remove from staging area and also delete it locally
+git reset --hard HEAD~
 ```
