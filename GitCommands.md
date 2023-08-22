@@ -15,9 +15,13 @@ git switch --create branch_name
 git restore file_name
 
 #retore back to the original state of a branch by removing unstaged files
+git clean -i #this will ask before deleting the files
+
 git clean -n #this will tell you which files will be deleted
 
 git clean -f #this will forcefully delete the files
+
+
 ```
 
 ## Staged Changes
@@ -29,3 +33,11 @@ git restore --staged file_name
 ```
 
 ## Committed Changes
+
+```bash
+#Remove the last commit
+git reset HEAD~
+
+#Remove the last two commits
+git reset HEAD~2
+```
